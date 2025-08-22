@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sec1{
+    background-color: cadetblue;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item{
+    width: 100px;
+    color: black;
+    background-color: blue;
+    margin: 5px;
+    padding: 2%;
+}
