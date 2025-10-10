@@ -1,0 +1,109 @@
+@font-face {
+    font-family: LinkinPark;
+    src: url(LinkinPark.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+:root{
+    --pink: #BB7BAA;
+    --blue: #88AAEA;
+    --lightblue: #B5DCFF;
+    --black: #020700;
+    --white: #ffffff;
+}
+
+body{
+    font-family: 'LinkinPark';
+    color: var(--white);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 12vh;
+    width: 100%;
+    background-color: var(--black);
+    border-bottom: 5px solid var(--white);
+}
+
+header img{
+    height: 10vh;
+    background-color: var(--white);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li{
+    cursor: pointer;
+}
+
+main{
+    height: 88vh;
+    background: url(img/banner.png) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    width: 350px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
+input{
+    width: 80%;
+    border: none;
+    background: rgba(0, 0, 0, .005);
+    border-bottom: 1px solid var(--lightblue);
+    color: var(--white);
+}
+
+input:focus{outline: none;}
+
+select{
+    width: 80%;
+    padding: 1%;
+}
+
+input::placeholder{color: var(--lightblue);}
+
+h1{font-size: 1.5rem; letter-spacing: 2px;}
+
+button{
+    width: 80%;
+    height: 8%;
+    background: linear-gradient(to right, var(--blue), var(--pink), var(--pink), var(--pink), var(--pink), var(--blue));
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+p{
+    text-align: center;
+    letter-spacing: 1px;
+}
