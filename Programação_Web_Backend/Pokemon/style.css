@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Pokemon';
+    src: url(Pokemon\ Solid.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #ffffff;
+    --red: #ff0000;
+    --green: #009f00;
+    --blue: #0095ff;
+    --yellow: #ffff00;
+    --orange: #ff9100;
+    --black: #181818;
+}
+
+main{
+    background: linear-gradient(180deg, var(--red), var(--red), var(--white), var(--white));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span{
+    position: absolute;
+    height: 50px;
+    background-color: var(--black);
+    width: 100vw;
+    z-index: 0;
+}
+
+.span2{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 50px solid var(--black);
+    background-color: var(--white);
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    align-self: flex-start;
+    display: flex;
+    gap: 10px;
+    font-family: 'Pokemon';
+    letter-spacing: 2px;
+}
+
+.title h1, .title h2{
+    font-size: 2rem;
+}
+
+.span2 img{ height: 75px; cursor: pointer;}
+.seta1{rotate: -90deg;}
+.seta2{rotate: 90deg;}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pokemon';
+    letter-spacing: 2px;
+}
+
+.content img{
+    height: 150px;
+    cursor: default;
+}
+
+.charmander{color: var(--orange);}
+.bulbasaur{color: var(--green);}
+.squirtle{color: var(--blue);}
+.pikachu{color: var(--yellow);}
