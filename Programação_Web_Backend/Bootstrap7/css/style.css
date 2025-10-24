@@ -1,0 +1,18 @@
+.container {
+    border: 5px dashed blue;
+    padding: 10px;
+    margin-top: 150px;
+}
+
+.row{
+    border: 5px solid black;
+    height: 200px;
+    padding: 10px;
+    margin: 0;
+}
+
+.col, .col-2{
+    border: 3px dashed red;
+    height: 50px;
+    margin: 0;
+}

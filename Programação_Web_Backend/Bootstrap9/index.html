@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Bootstrap1/css/bootstrap.css">
+    <script src="/Bootstrap1/js/bootstrap.js"></script>
+    <title>Acordeões, Alertas e Bagdes</title>
+</head>
+<body>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="alert alert-primary" role="alert">
+            Esta é uma mensagem do sistema!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            Não encontramos o seu pedido, faça uma solicitação <a href="#" class="alert-link">clicando aqui</a>. Responderemos o quanto antes!
+        </div>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Pedido Realizado!</h4>
+            <p>Recebemos o seu pedido, e já vamos envia-lo para Quito!</p>
+            <hr>
+            <p class="mb-0">Caso você precise de mais alguma informação, entre em contato com o Bryan Ramires Avanze <a href="#" class="alert-link">clicando aqui</a>.</p>
+        </div>
+    </div>
+
+    <div class="m-4">
+        <hr>
+        <h1>Lançamento de poduto <span class="badge bg-secondary">New</span></h1>
+        <h1>O seu pedido chega em até <span class="badge bg-danger">22 Minutos</span></h1>
+        <br>
+
+        <button type="button" class="btn btn-dark"> Mensagens <span class="badge bg-primary">3</span></button>
+        <span>Você tem mensagens pendentes</span>
+    </div>
+
+    <div class="container">
+        <hr>
+        <p class="h2">Meu Blog</p>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Tigrinho</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+        <h2>Página do Horóscopo</h2>
+        <p>Descrição dos lances</p>
+        <br><br><br><br><br><br>
+
+
+        <div id="carouselExampleFade" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="https://wallpapers.com/images/featured/1920-x-1080-hd-1qq8r4pnn8cmcew4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/71/9e/80/719e80760999b4c355a723224120eb07.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="https://wallpapers.com/images/hd/1920-x-1080-nature-desktop-zt65xx09vu42vnfu.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

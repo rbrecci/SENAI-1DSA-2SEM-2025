@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Bootstrap1/css/bootstrap.css">
+    <link rel="stylesheet" href="/Bootstrap8/css/style.css">
+    <title>Headings</title>
+</head>
+<body>
+    <h1>1</h1>
+    <h2>2</h2>
+    <h3>3</h3>
+    <h4>4</h4>
+    <h5>5</h5>
+    <h6>6</h6>
+
+    <p class="h1">Paragrafo com estilo h1</p>
+    <span class="h3">Span com estilo h3 e ele não quebra linhas</span>
+    <br><br>
+
+    <h1 class="display-1">Testando o display 1</h1>
+    <h1 class="display-3">Testando o display 3</h1>
+    <br><br>
+
+    <figure>
+        <blockquote class="blockquote">
+            <p>Oque samebos é uma gota, o que ignoramos é um oceano</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            Citação de <cite title="source title">EnzAvanze</cite>
+        </figcaption>
+    </figure>
+    <br><br>
+
+    <p>Esta é uma lista onde nao aparecem marcadores</p>
+    <ul class="list-unstyled">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <br><br>
+
+    <p>Esta é uma lista que aparece em linhas</p>
+    <ul class="list-inline">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item"><a href="#">Item 2</a></li>
+    </ul>
+    <br><br>
+
+    <div class="container-fluid">
+        <p class="h2">A imagem está dentro de um container</p>
+        <div class="col-md-4">
+            <img src="/Bootstrap8/img/hamburguer.png" alt="" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Hexadecimal</th>
+                    <th scope="col">Decimal</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>Branco</td>
+                    <td>#FFFFFF</td>
+                    <td>255, 255, 255</td>
+                </tr>
+                <tr>
+                    <td>Azul</td>
+                    <td>#0000FF</td>
+                    <td>0, 0, 255</td>
+                </tr>
+                <tr>
+                    <td>Amarelo</td>
+                    <td>#FFFF00</td>
+                    <td>255, 255, 0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container col-6">
+        <table class="table m-3">
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Material</th>
+                    <th scope="col">Especificações</th>
+                    <th scope="col">Preço (R$)</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider table-success">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Folha de Papel</td>
+                    <td>Tamanho A4</td>
+                    <td>17,82</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Lápis</td>
+                    <td>Pacote com 6 unidades</td>
+                    <td>12,00</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Masssinha</td>
+                    <td>Modelagem</td>
+                    <td>6,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <h2>Formulário Padrão</h2>
+        <form action="">
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Endereço de e-mail</label>
+                <input type="email" class="form-control" id="exampleInput" aria-describedby="emailHelp" placeholder="mago@email.com">
+                <div id="emailHelp" class="form-text">Nós do Dev não compartilhamos dados do Usuário</div>
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputPassword">
+            </div>
+            <fieldset disabled>
+                <div class="mb-3">
+                    <label for="disableTextInput" class="form-label">Código do Usuário</label>
+                    <input type="text" id="disableTextInput" class="form-control" placeholder="07070707">
+                </div>
+            </fieldset>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check1">
+                <label for="check1" class="form-check-label">Permanecer conectado</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
