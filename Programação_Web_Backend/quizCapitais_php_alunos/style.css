@@ -1,0 +1,211 @@
+/* Resetando algumas propriedades padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Cor suave e refrescante, tema relacionado à Geografia */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container principal (para o início, final e parte do jogo) */
+.container {
+    background: linear-gradient(to right, #81d4fa, #4fc3f7); /* Gradiente azul que remete ao céu */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Estilo para o título */
+
+h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #0277bd;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: #0277bd;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Linha de separação */
+hr {
+    border: 0;
+    height: 2px;
+    background: #0277bd;
+    margin: 20px 0;
+}
+
+/* Estilo para as informações da questão e progresso */
+h5, h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #01579b;
+}
+
+/* Destacar a quantidade de questões */
+h5 strong {
+    font-size: 1.6rem;
+    color: #0288d1;
+}
+
+/* Destaque para o nome do país */
+h4 strong {
+    font-size: 1.8rem;
+    color: #f57c00; /* Cor vibrante de vermelho para o nome do país */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/* Estilo das alternativas */
+div h3 {
+    font-size: 1.6rem;
+    background-color: #ffffff;
+    color: #0277bd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre as alternativas */
+div h3:hover {
+    background-color: #0288d1;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Estilo para o botão "Desistir" */
+a {
+    font-size: 1.2rem;
+    color: #ffb300;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o link "Desistir" */
+a:hover {
+    color: #f57c00;
+}
+
+/* Estilo para a parte final do jogo */
+
+/* Resultados do jogo */
+.result-container {
+    background: linear-gradient(to right, #ffeb3b, #ff9800); /* Gradiente de amarelo e laranja */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Resultados (total de questões, corretas e erradas) */
+.result-container h3 {
+    font-size: 1.8rem;
+    color: #01579b;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Resultado final em destaque */
+.result-container .result-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0277bd; /* Azul para maior contraste */
+}
+
+/* Botão para jogar novamente */
+.result-container .btn-secondary {
+    background-color: #0288d1;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Efeito ao passar o mouse sobre o botão "Jogar novamente" */
+.result-container .btn-secondary:hover {
+    background-color: #01579b;
+    transform: scale(1.05);
+}
+
+/* Adicionando a animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicando animação de fadeIn no conteúdo */
+.container {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Especificamente para o formulário do jogo, mantendo o estilo das respostas e interações */
+#text_total_questions {
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #0288d1;
+    background-color: #ffffff;
+    width: 60%;
+    margin: 10px 0 20px;
+    transition: border-color 0.3s ease;
+}
+
+#text_total_questions:focus {
+    border-color: #039be5;
+    outline: none;
+}
+
+/* Estilo do botão no formulário de início */
+.btn {
+    background-color: #ffb300; /* Cor vibrante de amarelo */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #f57c00;
+    transform: scale(1.05);
+}

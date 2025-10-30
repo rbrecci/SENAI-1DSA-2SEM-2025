@@ -1,0 +1,202 @@
+/* Resetando propriedades padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e; /* Fundo escuro, estilo Calamidade */
+    color: #f0e6d2; /* Dourado claro para texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container principal */
+.container {
+    background: linear-gradient(145deg, #2b2b2b, #1c1c1c); /* Cinza metálico escuro */
+    border: 2px solid #c8a559; /* Dourado envelhecido */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(200, 165, 89, 0.3);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Títulos */
+h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #d1b25f; /* Dourado forte */
+    text-shadow: 0 0 10px rgba(209, 178, 95, 0.6);
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: #d1b25f;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Linha de separação */
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d1b25f, transparent);
+    margin: 20px 0;
+}
+
+/* Informações da questão */
+h5, h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #e0cf9f;
+}
+
+h5 strong {
+    font-size: 1.6rem;
+    color: #f1d68a;
+}
+
+h4 strong {
+    font-size: 1.8rem;
+    color: #f4c85b;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/* Alternativas */
+div h3 {
+    font-size: 1.6rem;
+    background-color: #2b2b2b;
+    color: #f0e6d2;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #d1b25f;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+div h3:hover {
+    background-color: #d1b25f;
+    color: #1c1c1c;
+    transform: scale(1.05);
+}
+
+/* Link "Desistir" */
+a {
+    font-size: 1.2rem;
+    color: #e0cf9f;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f4c85b;
+}
+
+/* Container de resultado */
+.result-container {
+    background: linear-gradient(145deg, #3b3b3b, #1f1f1f);
+    border: 2px solid #c8a559;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(200, 165, 89, 0.3);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-container h3 {
+    font-size: 1.8rem;
+    color: #e0cf9f;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.result-container .result-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f1d68a;
+}
+
+/* Botão "Jogar novamente" */
+.result-container .btn-secondary {
+    background-color: #c8a559;
+    color: #1c1c1c;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.result-container .btn-secondary:hover {
+    background-color: #f4c85b;
+    transform: scale(1.05);
+}
+
+/* Animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Formulário inicial */
+#text_total_questions {
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #c8a559;
+    background-color: #2b2b2b;
+    color: #f0e6d2;
+    width: 60%;
+    margin: 10px 0 20px;
+    transition: border-color 0.3s ease;
+}
+
+#text_total_questions:focus {
+    border-color: #f4c85b;
+    outline: none;
+}
+
+/* Botão inicial */
+.btn {
+    background-color: #c8a559;
+    color: #1c1c1c;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #f4c85b;
+    transform: scale(1.05);
+}
